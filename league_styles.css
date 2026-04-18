@@ -1,0 +1,731 @@
+/* FONTS */
+@font-face {
+    font-family: 'LOLBeaufort';
+    src: url('fonts/BeaufortforLOL-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LOLSpiegel';
+    src: url('fonts/Spiegel_TT_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LOLSpiegelBold';
+    src: url('fonts/Spiegel_TT_Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* LANDING PAGE */
+
+body{
+    background-color: #042028;
+    margin-left: 150px;
+}
+
+.default-landing-layout { display: none !important; }
+
+.default-img { display: none !important; }
+
+.default-text,
+.default-text + br {
+    display: none !important;
+}
+
+.character-container tr {
+    display: flex;
+}
+
+.navbar-container {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-container td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+.navbar-container a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: "LOLBeaufort";
+    text-align: left;
+    color: #BE5A04;
+    border-radius: 8px;
+    background-color: #03171c;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #BE5A04;
+    color: #03171c;
+}
+
+.character-container td:first-child { 
+    order: 2; 
+} 
+
+.character-container td:last-child  { 
+    order: 1; 
+}
+
+.character-container {
+    padding: 6px;
+    margin-bottom: 20px;
+    border-color: #BE5A04;
+
+    h1, small, h2, h3, p{
+        color: #BE5A04;
+    }
+
+    h1, h2, h3, small{
+        font-family: 'LOLBeaufort';  
+    }
+    p{
+        font-family: 'LOLSpiegel';
+    }
+}
+
+.alt-landing-layout .target {
+    filter: drop-shadow(0 0 10px #010b0d) drop-shadow(0 0 15px #010b0d);
+}
+
+.alt-landing-layout div a button {
+    width: 45%;
+    padding: 15px 0;
+    border: 2px solid #BE5A04;
+    color: #BE5A04;
+    font-family: 'LOLBeaufort';
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: larger;
+    display: inline-block;
+    margin-right: 2%;
+    background-color: #042028;
+}
+
+.pdf-ref {
+    text-decoration: none
+}
+
+.alt-landing-layout div a button:hover {
+    background-color: #382d05;
+}
+
+.aura-to-rank {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aurabox {
+    position: relative;
+    padding: 90px;
+    overflow: hidden;
+    cursor: pointer;
+
+    h1, h4 {
+        font-family: 'LOLBeaufort';
+    }
+}
+
+.aurabox::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: transparent;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.aurabox:hover::before {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.ambitious-box {
+    background-image: url('./assets/Soraka_DawnbringerSkin_HD.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1, h4 {
+        color: #d77017;
+        filter: drop-shadow(0 0 10px #010b0d)
+    }
+}
+
+.dauntless-box {
+    background-image: url('./assets/Cho\'Gath_DarkStarSkin_HD.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1, h4 {
+        color: #d77017;
+        filter: drop-shadow(0 0 10px #010b0d)
+    }
+}
+
+.resilient-box {
+    background-image: url('./assets/Diana_HeavenscaleSkin_HD.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1, h4 {
+        color: #042028;
+    }
+}
+
+.rankings {
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+
+    .rank {
+        text-align: center;
+    }
+
+    img {
+        width: 90px;
+        height: auto;
+
+    }
+}
+
+.aurabox:hover .rankings{
+    transform: translateY(-100%);
+}
+
+
+/* PORTFOLIO */
+
+.portfolio-title-container h1 {
+  text-align: left;
+  margin: 0;
+  padding: 0 0 10px 0;
+  color: #BE5A04;
+  font-family: 'LOLBeaufort';
+  position: relative;
+  font-size: 2em;
+}
+
+.portfolio-title-container {
+  margin: 0 auto 0 0;
+  text-align: left;
+}
+
+.portfolio-title-container h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 87vw;
+  height: 2px;
+  background-color: #BE5A04;
+}
+
+.project-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  row-gap: 24px;
+  column-gap: 24px;
+  align-items: start;
+}
+
+.project-section > tbody,
+.project-section > tbody > tr {
+  display: contents;
+}
+
+.project-section > tbody > tr > td:nth-child(2),
+.project-section > tbody > tr > td:nth-child(2) .project-image-container {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  position: relative;
+  justify-self: center;
+  align-self: start;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.project-section > tbody > tr > td:nth-child(1) {
+  grid-column: 2;
+  grid-row: 1;
+  box-sizing: border-box;
+  display: block;
+  padding: 0;
+}
+
+.project-section > tbody > tr > td:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+  box-sizing: border-box;
+  display: block;
+  padding: 0;
+}
+
+.project-section img[alt="line"],
+.project-section img[src*="betterline"] {
+  display: none !important;
+}
+
+.project-section td[width] {
+  width: auto !important;
+  flex: unset !important;
+}
+.project-section td.project-subsection:first-child {
+    text-align: left !important;
+    width: 100% !important;
+}
+
+.project-section > tbody > tr > td:nth-child(2) #project-image,
+.project-section .project-image-container #project-image {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform .18s ease;
+}
+
+.project-box {
+    h2, p, li {
+        color: #BE5A04;
+    }
+
+    h2 {
+        font-family: 'LOLBeaufort';
+    }
+
+    p, li {
+        font-family: 'LOLSpiegel'
+    }
+}
+
+.caption-holder {
+    font {
+        font-family: 'LOLBeaufort';
+    }
+}
+
+.project-section > tbody > tr > td:nth-child(2):hover #project-image,
+.project-section .project-image-container:hover #project-image {
+  transform: translateY(-3px);
+}
+
+.project-section td.project-subsection:first-child {
+    align-self: end !important;
+}
+
+.project-section > tbody > tr > td:nth-child(2) .project-caption-container,
+.project-section .project-image-container .project-caption-container {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  background: rgba(3, 23, 29, 0.8);;
+  color: #d87e2f;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .18s ease, transform .18s ease, visibility .18s;
+  pointer-events: none;
+}
+
+.project-section > tbody > tr > td:nth-child(2):hover .project-caption-container,
+.project-section .project-image-container:hover .project-caption-container {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.selection-wrapper {
+  margin: 20px auto 0;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.selection-item {
+    cursor: pointer;
+    border: transparent;
+    border-radius: 6px;
+    transition: border 0.2s, transform 0.2s;
+}
+
+.selection-item:hover {
+    border: 3px solid #f59e52;
+    transform: scale(1.07);
+}
+
+.selection-item.selected {
+    border: 3px solid #BE5A04;
+}
+
+.red-selection {
+    padding: 3px 70px;
+    border: solid #d87e2f;
+    border-width: 1px;
+    display: inline-block;
+}
+
+.inspo-container {
+    display: none;
+}
+
+.alt-inspo-wrapper {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#inspo-img {
+    width: 50%;
+    flex-shrink: 0;
+    transition: transform 0.5s ease;
+}
+
+.inspo-content {
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: width 1s ease, opacity 0.6s ease;
+    margin-left: 20px;
+}
+
+.alt-inspo-wrapper.active .inspo-content {
+    width: 45%;
+    opacity: 1;
+}
+
+.alt-inspo-wrapper.active #inspo-img {
+    transform: scale(0.95);
+}
+
+.inspo-content {
+    h1, h4, p, li {
+        color: #BE5A04;
+    }
+
+    p, li {
+        font-family: 'LOLSpiegel';
+    }
+
+    h1, h4 {
+        font-family: 'LOLBeaufort';
+    }
+
+    a{
+        color: #ebb07c;
+        text-decoration: none;
+        transition: 0.2s ease;
+    }
+    a:hover {
+        color:#3657c6;
+    }
+}
+
+/* QUALIFICATIONS */
+.image-section {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.image-section img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay .top-left {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    opacity: 0;
+    max-width: 60%;
+    transition: opacity 0.4s ease;
+}
+
+.image-section img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.4s ease;
+}
+
+.image-section:hover img {
+    filter: brightness(60%);
+}
+
+.image-section:hover .top-left {
+    opacity: 1;
+}
+
+/* .overlay .middle-right {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.overlay .bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+} */
+
+.bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+}
+
+.middle-right {
+    position: absolute;
+    bottom: 23px;
+    right: 20px;
+}
+
+.overlay button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.middle-right button {
+    padding: 5px;
+    width: 50px !important;
+    height: 83px !important;
+}
+
+.middle-right button img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.overlay h1, .overlay h4, .overlay p {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    margin: 0 0 5px 0;
+}
+
+.overlay {
+    h1 {
+        font-family: 'LOLBeaufort';
+    }
+
+    h4 {
+        font-family: 'LOLSpiegel';
+    }
+
+    p {
+        font-family: 'LOLSpiegel';
+    }
+}
+
+.resume-button {
+    border: 2px;
+    border-color: #BE5A04;
+    background-color: #062e39;
+    color: #dd7a22;
+    border: none;
+    width: 200px;
+    height: 80px;
+    font-family: 'LOLBeaufort';
+    margin: 5px;
+    font-size: 20px !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-button:hover {
+    background-color: rgb(18, 99, 121);
+    transform: scale(1.05);
+}
+
+.next-button {
+    background-color: #BE5A04;
+    border-color: transparent;
+    border-radius: 6px;
+    height: 100px !important;
+    transition: background-color 0.3s ease transform 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #934a0a;
+    transform: scale(1.05);
+}
+
+.skills-section {
+    display: none;
+}
+
+.alt-skills-section {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.alt-skills-grid {
+  display: flex;
+  justify-content: space-evenly; /* spreads items evenly */
+  align-items: center;
+  flex-wrap: nowrap; /* all on one line */
+  gap: 20px; /* spacing between each skill */
+  width: 100%;
+}
+
+.alt-skill-item {
+  flex: 1; /* ensures they stretch across the row */
+  min-width: 80px; /* prevents them from shrinking too small */
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #BE5A04;
+  transition: background-color 0.3s ease;
+  h4 {
+        font-family: 'LOLBeaufort';
+        color: #BE5A04;
+    }
+}
+
+.alt-skill-item h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.alt-skill-item:hover {
+    background-color: #be5b0480;
+}
+
+.lore-container {
+    tr {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    td {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    h1, h3 {
+        color: #BE5A04;
+    }
+
+    h1, h3 {
+        font-family: 'LOLBeaufort';
+    }
+
+    p {
+        font-family: 'LOLSpiegel';
+        color: #e29450;
+    }
+
+    
+}
+
+embed {
+    justify-content: center;
+
+    display: flex;
+    width: 850px;
+    height: 1050px;
+}
+
+.lore-img {
+    width: 10% !important;
+    max-width: 300px;
+}
+
+/* SERVICE */
+.service-table {
+    display: block;
+    width: 100%;
+}
+
+.service-table tr {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-table {
+    h2, p, small {
+        color: #BE5A04;
+    }
+
+    h2 {
+        font-family: 'LOLBeaufort';
+    }
+
+    p, small {
+        font-family: 'LOLSpiegel';
+    }
+
+    a{
+        color: #ebb07c;
+        text-decoration: none;
+        transition: 0.2s ease;
+    }
+    a:hover {
+        color:#3657c6;
+    }
+}
+
+.service-table td {
+    flex: 1;
+    padding: 2px !important;
+}
+
+.tao-section td:nth-child(1) { order: 1; }
+.tao-section td:nth-child(2) { order: 0; }
+.tao-section td:nth-child(3) { order: 2; }
+
+.stepping-section td:nth-child(1) { order: 1; }
+.stepping-section td:nth-child(2) { order: 2; }
+.stepping-section td:nth-child(3) { order: 0; }
+
+.tao-section img,
+.stepping-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+

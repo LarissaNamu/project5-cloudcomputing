@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Larissa's Website</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" id="mainStylesheet" href="styles.css">
+<script src="main.js" defer></script>
+</head>
+
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="navbar-container">
+  <tr>
+    <td valign="middle" class="logo navbar">
+      <img src="./assets/valo_square.jpg" class="default-img" onclick="toggleStyleSheet()" alt="Logo" height="40" valign="middle">
+      <img src="./assets/league_logo.png" class="alt-img" onclick="toggleStyleSheet()" alt="leaguelogo" height="40" valign="middle">
+      &nbsp;
+      <a href="index.html">Home</a>&nbsp;&nbsp;
+      <a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;
+      <a href="qualifications.html">Qualifications</a>&nbsp;&nbsp;
+      <a href="service.html">Service</a>&nbsp;&nbsp;
+      <a href="genai.html">AI</a>&nbsp;&nbsp;
+    </td>
+  </tr>
+</table>
+
+<table class="portfolio-title-container" cellspacing="0" cellpadding="10" align="center">
+  <tr>
+    <td>
+      <h1>Portfolio</h1>
+    </td>
+  </tr>
+</table>
+
+<table class="project-section" align="center" cellpadding="10">
+    <tr>
+        <td class="project-subsection" width="33%" align="right" valign="bottom">
+            <img src="./assets/betterline.png" alt="line" width="33%">
+            <div class="project-box">
+                <h2>
+                    Summary
+                </h2>
+                <p id="project-summary">
+                    FindAYota is a web app that helps users find Toyota vehicles matching their preferences and budget. Users input their desired features, and the system recommends the top three models while estimating monthly payments. Built with Flask and Tailwind CSS, it offers an intuitive interface with plans to expand features and support more car brands.
+                </p>
+            </div>
+            
+        </td>
+
+        <td class="project-image-container" align="center" width="33%" valign="top"> 
+            <a href="https://devpost.com/software/findayota" id="project-link">
+                <img id="project-image" class="project-image" src="./assets/toyota_project.jpg" alt="portfolio_pic" width="60%">
+            </a>
+            <table class="project-caption-container" width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
+                <tr class="caption-holder">
+                    <td align="center">
+                        <font id="project-title" class="project-caption">FindAYota</font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+        <td class="project-subsection" width="33%" valign="top">
+            <div class="project-box">
+                <h2>
+                    Features
+                </h2>
+                <ul id="project-features">
+                    <li>An interactive UI/UX design</li>
+                    <li>Smart calculation of car compatibility</li>
+                    <li>Customizable financial planning for each car</li>
+                    <li>Intuitive form design</li>
+                </ul>
+            </div>
+            <img src="./assets/betterline-flip.png" alt="line" width="33%">
+        </td>
+    </tr>
+
+</table>
+<div class="selection-wrapper">
+    <div class="red-selection" align="center">
+        <table align="center" cellspacing="10" cellpadding="0">
+            <tr>
+                <td align="center" valign="middle">
+                    <img class="selection-item" src="./assets/small_food.jpg" alt="TakeAByte" width="60"
+                        data-title="TakeAByte"
+                        data-summary="TakeAByte is a mobile app that allows users to track their nutritional intake by scanning food items. Built with TensorFlow and Python, our food segmentation computer vision model will identify the food items in the image and provide nutritional information through USDA's API."
+                        data-features='["accurate macro and calorie tracking", "food segmentation computer vision model", "volume estimation research"]'
+                        data-image="./assets/take_a_byte_pic.png"
+                        data-link="https://github.com/aggie-coding-club/Take_a_Byte"
+                    >
+                </td>
+
+                <td align="center" valign="middle">
+                    <img class="selection-item" src="./assets/toyota_small.jpg" alt="FindAYota" width="60"
+                        data-title="FindAYota"
+                        data-summary="FindAYota is a web app that helps users find Toyota vehicles matching their preferences and budget. Users input their desired features, and the system recommends the top three models while estimating monthly payments. Built with Flask and Tailwind CSS, it offers an intuitive interface with plans to expand features and support more car brands."
+                        data-features='["An interactive UI/UX design", "Smart calculation of car compatibility", "Customizable financial planning for each car", "Intuitive form design"]'
+                        data-image="./assets/toyota_project.jpg"
+                        data-link="https://devpost.com/software/findayota"
+                    >
+                </td>
+
+                <td align="center" valign="middle">
+                    <img class="selection-item" src="./assets/pengu.png" alt="Hexforce" width="60"
+                        data-title="HexForce"
+                        data-summary="HexForce is a website that allows Teamfight Tactics players to map out their team compositions and make smart choices about character synergy to maximize their chances of winning. Built with React and Flask, HexForce features a drag-and-drop interface and a team comp sharing feature that allows users to share their unique team compositions with others."
+                        data-features='["Up-to-date character and team information", "Intuitive UX/UI design", "Smart calculation of team synergy", "SSO login authentication"]'
+                        data-image="./assets/tft_card.png"
+                        data-link="https://github.com/LarissaNamu/HexForce"
+                    >
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<table class="inspo-container" align="center" cellspacing="20">
+    <tr>
+        <td width="50%" valign="top">
+            <h1>My Inspiration</h1>
+            <p>
+                The source for all of my projects stem from my interests and hobbies.
+                Take a look at my Hexforce project, this project stemmed from my love for Riot Game's Teamfight Tactics while
+                the TakeAByte project was inspired by my love of food and fitness.
+                I hope that through all of my projects, now and in the future, I will be able to continue to fuel my passion for 
+                my interests while solving real world problems.
+            </p>
+            <p>
+                Want to see more of my work? Check out <a href="https://github.com/LarissaNamu">my GitHub!</a>
+            </p>
+            <p>
+                Enjoy this picture of me and my bearded dragon Purdy!
+            </p>
+            <br>
+            <h4>My Project Bucket List</h4>
+            <ul>
+                <li>AI TFT Composition Builder</li>
+                <li>Samsung Watch Health Visualization</li>
+            </ul>
+        </td>
+
+        <td align="right" width="50%" valign="top">
+            <img src="./assets/my_n_purdy.jpg" alt="purdy" width="80%">
+        </td>
+    </tr>
+
+</table>
+
+<div class="alt-inspo-wrapper">
+    <img id="inspo-img" src="./assets/my_n_purdy.jpg" alt="purdy">
+
+    <div class="inspo-content">
+        <h1>My Inspiration</h1>
+        <p>
+            The source for all of my projects stem from my interests and hobbies.
+            Take a look at my Hexforce project, this project stemmed from my love for Riot Game's Teamfight Tactics while
+            the TakeAByte project was inspired by my love of food and fitness.
+            I hope that through all of my projects, now and in the future, I will be able to continue to fuel my passion for 
+            my interests while solving real world problems.
+        </p>
+        <p>
+            Want to see more of my work? Check out <a href="https://github.com/LarissaNamu">my GitHub!</a>
+        </p>
+        <p>
+            Enjoy this picture of me and my bearded dragon Purdy!
+        </p>
+        <h4>My Project Bucket List</h4>
+        <ul>
+            <li>AI TFT Composition Builder</li>
+            <li>Samsung Watch Health Visualization</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

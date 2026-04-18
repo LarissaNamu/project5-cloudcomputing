@@ -1,0 +1,534 @@
+@font-face {
+  font-family: 'ValFont';
+  src: url('./fonts/Valorant\ Font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* LANDING PAGE */
+body{
+    background-color: #111823;
+}
+
+.alt-img { display: none !important; }
+
+.alt-landing-layout { display: none !important;}
+
+.alt-text,
+.alt-text + br {
+    display: none !important;
+}
+
+.navbar-container {
+    margin-bottom: 10px;
+}
+
+.navbar a{
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #FD4556;
+    font-family: 'ValFont';
+    background-color: #000000;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #FD4556;
+    color: #000000;
+}
+
+.pdf-ref {
+    text-decoration: none
+}
+
+.aura-to-rank {
+    display: none;
+}
+
+.character-container {
+    padding: 6px;
+    border-color: #FD4556;
+
+    h1, small, h2, h3, p{
+        color: white;
+    }
+
+    h1, h2, h3, small{
+        font-family: 'ValFont';  
+    }
+    p{
+        font-family: trebuchet ms, sans-serif;
+    }
+
+
+    button{
+        border: 2px;
+        border-color: white;
+        background-color: #42b99f;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-family: trebuchet ms, sans-serif;
+        margin: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    button:hover {
+        background-color: #8de0ce;
+        transform: scale(1.05);
+    }
+}
+
+.aura-container {
+    h1{
+        font-family: 'ValFont';
+        text-shadow: 3px 3px 0 black;
+        transition: transform 0.3s ease;
+    }
+    h1:hover {
+        transform: scale(1.10);
+    }
+
+    h4{
+        font-family: 'Trebuchet MS';
+        text-shadow: 1.5px 1.5px 0 black, 0 0 5px black;
+    }
+
+    h1, h4 {
+        color: #FD4556;
+    }
+
+    .ambitious { 
+        background: url('./assets/jett.jpg') no-repeat center center; 
+        background-size: cover
+    }
+    .dauntless { 
+        background: url('./assets/sage.jpg') no-repeat center center; 
+        background-size: cover
+    }
+    .resilient { 
+        background: url('./assets/cypher.jpg') no-repeat center center; 
+        background-size: cover
+    }
+}
+
+.rankings-container {
+    padding: 6px;
+    border-color: #FD4556;
+
+    h1{
+        font-family: 'ValFont';
+        color: white;
+    }
+
+    h4{
+        font-family: 'ValFont';
+        color: white;
+    }
+
+    img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+    img:hover {
+        transform: scale(1.08);
+        filter: drop-shadow(0 0 15px #FD4556) drop-shadow(0 0 20px #FD4556);
+    }
+}
+
+/* PORTFOLIO */
+.portfolio-title-container {
+    font-family: 'ValFont';
+    align-self: center !important;
+    align-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    color: #FD4556;
+    border-width: 1px;
+    border-color: #FD4556;
+    h1 {
+        margin: 0;
+        align-self: center !important;
+        text-align: center;
+        display: inline-block;
+    }
+
+    td {
+        align-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        align-self: center !important;
+        vertical-align: middle;
+    }
+}
+
+.project-section {
+    h2 {
+        font-family: 'ValFont';
+        color: white;
+    }
+    p, li {
+        font-family: 'Trebuchet MS';
+        color: white;
+    }
+
+    .project-box {
+        border: 2px solid #FD4556;
+        padding: 10px;
+    }
+}
+
+.selection-wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.red-selection {
+    background-color: #FD4556;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.project-image-container {
+    position: relative;
+
+    font {
+        font-family: 'ValFont';
+    }
+}
+
+.project-image {
+    display: block;
+    width: 60%;
+    z-index: 1;
+    transition: filter 0.2s ease;
+}
+
+.project-image:hover {
+    filter: drop-shadow(0 0 10px #FD4556) drop-shadow(0 0 15px #FD4556);
+}
+
+.project-caption-container {
+    margin-top: -40px;
+}
+
+.caption-holder {
+    z-index: 5;
+    position: relative;
+}
+
+.project-caption{
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
+}
+
+.inspo-container {
+    h1, h4 {
+        font-family: 'ValFont';
+        color: white;
+    }
+
+    p, li{
+        font-family: 'Trebuchet MS';
+        color: white;
+    }
+    a{
+        color: #42b99f;
+        text-decoration: none;
+        transition: 0.2s ease;
+    }
+    a:hover {
+        color:#FD4556;
+    }
+}
+
+.selection-item {
+    cursor: pointer;
+    border: transparent;
+    border-radius: 6px;
+    transition: border 0.2s, transform 0.2s;
+}
+
+.selection-item:hover {
+    border: 3px solid #BD3944;
+    transform: scale(1.07);
+}
+
+.selection-item.selected {
+    border: 3px solid #53212B;
+}
+
+/* QUALIFICATIONS */
+.image-section {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.image-section img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay .top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    max-width: 60%;
+}
+
+.overlay .middle-right {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.overlay .bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.overlay button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.middle-right button {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.alt-inspo-wrapper {
+    display: none;
+}
+
+.middle-right button img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.overlay h1, .overlay h4, .overlay p {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    margin: 0 0 5px 0;
+}
+
+.overlay {
+    h1 {
+        font-family: 'ValFont';
+    }
+
+    h4 {
+        font-family: 'Trebuchet MS';
+    }
+
+    p {
+        font-family: 'Trebuchet MS';
+    }
+}
+
+.resume-button {
+    border: 2px;
+    border-color: white;
+    background-color: #42b99f;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 80px;
+    font-family: trebuchet ms, sans-serif;
+    margin: 5px;
+    font-size: 20px !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-button:hover {
+    background-color: #8de0ce;
+    transform: scale(1.05);
+}
+
+.next-button {
+    background-color: #FD4556;
+    border-color: transparent;
+    border-radius: 6px;
+    height: 100px !important;
+    transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #BD3944;
+}
+
+.alt-skills-section {
+    display: none !important;
+}
+
+.alt-skills-item {
+    display: none;
+    h4, h2 {
+        display:none;
+    }
+}
+
+.alt-skills-grid {
+    display: none;
+}
+
+.skills-section {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.skills-title {
+    display: inline-block;
+    border: 1px solid #FD4556;
+    margin-bottom: 30px;
+    padding: 1px 3px 1px 3px;
+}
+
+.skills-title h2 {
+    margin: 0;
+    padding: 5px;
+    color: #FD4556;
+    font-family: 'ValFont';
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; 
+    padding-left: 15%; 
+    padding-right: 15%;
+    padding-bottom: 5px;  
+}
+
+.skill-item {
+    border: 1px solid #FD4556;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+
+    h4 {
+        font-family: 'Trebuchet MS';
+        color: #FD4556;
+    }
+}
+
+.skill-item:hover {
+    background-color: #fd45573b;
+}
+
+.lore-section {
+    h1 {
+        color: white;
+        font-family: 'ValFont';
+    }
+
+    h3 {
+        color: #FD4556;
+        font-family: 'Trebuchet MS';
+    }
+
+    p {
+        color: white;
+        font-family: 'Trebuchet MS';
+    }
+
+    
+}
+.lore-img {
+    width: 20%;
+}
+
+/* SERVICE */
+.tao-section {
+    h2 {
+        color: #FD4556;
+        font-family: 'ValFont'
+    }
+
+    p {
+        color: white;
+        font-family: 'Trebuchet MS';
+    }
+
+    a{
+        color: #42b99f;
+        text-decoration: none;
+        transition: 0.2s ease;
+    }
+    a:hover {
+        color:#FD4556;
+    }
+}
+
+embed {
+    justify-content: center;
+
+    display: flex;
+    width: 850px;
+    height: 1050px;
+}
+
+section {
+    justify-content: center;
+    display: flex;
+}
+
+.stepping-section {
+    
+    border-top: 2px solid #FD4556;
+    h2 {
+        color: #FD4556;
+        font-family: 'ValFont'
+    }
+
+    p {
+        color: white;
+        font-family: 'Trebuchet MS';
+    }
+
+    small {
+        color: #FD4556;
+        font-family: 'Trebuchet MS';
+    }
+
+    a{
+        color: #42b99f;
+        text-decoration: none;
+        transition: 0.2s ease;
+    }
+    a:hover {
+        color:#FD4556;
+    }
+}
+
+.stepping-table {
+    border-top: 2px solid #FD4556;
+    padding-top: 40px !important;
+}
+
